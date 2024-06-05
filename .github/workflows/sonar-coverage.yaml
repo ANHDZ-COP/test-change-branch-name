@@ -6,8 +6,9 @@ on:
       - main
       - develop
   pull_request:
-      - 'main'
-      - 'develop'
+    branches:
+        - 'main'
+        - 'develop'
     types: [opened, synchronize, reopened]
 jobs:
   sonarcloud:
